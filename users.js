@@ -4,7 +4,6 @@ async function methodGetUsers() {
   xhr.send()
 
   xhr.onload = function () {
-    // if (xhr.status == 200) {
     let response = JSON.parse(xhr.response)
 
     if (response && Array.isArray(response) && response.length > 0) {
@@ -23,6 +22,4 @@ async function methodGetUsers() {
       })
     }
   }
-
-  // }
 }
